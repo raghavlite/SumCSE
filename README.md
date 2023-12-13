@@ -4,7 +4,7 @@ This repository is a fork from https://github.com/hkust-nlp/SynCSE.git
 
 
 
-Download SumCSE: `https://drive.google.com/file/d/1458du6o6-4ZRzCopbjt_-GsZprax4sZj/view?usp=sharing``
+Download SumCSE: https://drive.google.com/file/d/1458du6o6-4ZRzCopbjt_-GsZprax4sZj/view?usp=sharing
 
 
 
