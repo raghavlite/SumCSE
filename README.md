@@ -5,8 +5,10 @@ This repository is a fork from https://github.com/hkust-nlp/SynCSE.git
 
 
 Download SumCSE: https://drive.google.com/file/d/1458du6o6-4ZRzCopbjt_-GsZprax4sZj/view?usp=sharing
-and place it in `../Data/`
-also create a `../result` directory
+
+Place it in `../Data/`
+
+Also create a `../result` directory
 
 
 Run and Evaluate SumCSE:
