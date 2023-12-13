@@ -305,13 +305,15 @@ def main():
     if data_args.train_file is not None:
         data_files["train"] = data_args.train_file
     extension = data_args.train_file.split(".")[-1]
+    dataset_cache_prefix = data_args.train_file.split("/")[-1]
     if extension == "txt":
         extension = "text"
     if extension == "csv":
-        datasets = load_dataset(extension, data_files=data_files, cache_dir="./data/", delimiter="\t" if "tsv" in data_args.train_file else ",")
+        dataset_cache_prefix = dataset_cache_prefix.split(".")[-2]
+        datasets = load_dataset(extension, data_files=data_files, cache_dir=f"../DATA/cache/{dataset_cache_prefix}", delimiter="\t" if "tsv" in data_args.train_file else ",")
     else:
         print("load huggging face dataset")
-        datasets = load_dataset(data_args.train_file, cache_dir="./data/")
+        datasets = load_dataset(data_args.train_file, cache_dir=f"../DATA/cache/{dataset_cache_prefix}")
 
     datasets = datasets.shuffle(seed=42)
     #datasets['train'] = datasets["train"].select(range(275497))
