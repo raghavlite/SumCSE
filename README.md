@@ -10,5 +10,5 @@ Download SumCSE: https://drive.google.com/file/d/1458du6o6-4ZRzCopbjt_-GsZprax4s
 
 Run and Evaluate SumCSE:
 ```
-./scripts/simcse_train_test.sh --num_gpus 4 --output_dir ../result/1212_rl_fllmcse_randsumindppfs_randsumindnegfs_nomlm/ --model_name_or_path roberta-large --learning_rate 1e-5 --per_device_train_batch_size 128 --train_file ../DATA/llmcse_multi/llm_data2/fllmcse_randsumindppfs_randsumindnegfs.csv --num_train_epochs 3
+./scripts/simcse_train_test.sh --num_gpus 4 --output_dir ../result/SumCSE/ --model_name_or_path roberta-large --learning_rate 1e-5 --per_device_train_batch_size 128 --train_file ../Data/SumCSE.csv --num_train_epochs 3
 ```
