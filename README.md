@@ -15,3 +15,5 @@ Run and Evaluate SumCSE:
 ```
 ./scripts/simcse_train_test.sh --num_gpus 4 --output_dir ../result/SumCSE/ --model_name_or_path roberta-large --learning_rate 1e-5 --per_device_train_batch_size 128 --train_file ../Data/SumCSE.csv --num_train_epochs 3
 ```
+
+vicuna_inference_transformation.py files can be used to create SumCSE transformation if you are interested in recreating SumCSE dataset.
