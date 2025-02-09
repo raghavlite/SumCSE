@@ -5,6 +5,12 @@ tokenizers==0.9.4
 torch==1.13.0+cu117
 torchaudio==0.13.0+cu117
 torchvision==0.14.0+cu117
+wandb==0.15.12
+scipy==1.13.1
+numpy==1.25.1
+huggingface-hub==0.28.1
+multiprocess==0.70.16
+scikit-learn==1.6.1
 scipy
 datasets
 pandas
